@@ -1,0 +1,66 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.single-tour {
+  position: relative;
+}
+
+header {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(11, 204, 43);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+
+.btn-one {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: 3px solid rgb(145, 255, 145);
+  color: rgb(91, 255, 145);
+  font-size: 15px;
+}
+
+section img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.tour-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(69, 255, 69);
+  color: white;
+  padding: 5px;
+  letter-spacing: 2px ;
+}
+
+.tour-name {
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+  }
+}
+
+
