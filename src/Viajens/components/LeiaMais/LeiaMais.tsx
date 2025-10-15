@@ -1,7 +1,4 @@
 import { useState } from "react";
-import "./App.css";
-
-
 interface LeiaMaisProps {
   texto: string;
 }
