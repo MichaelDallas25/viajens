@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: rgb(252, 190, 22);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+nav li {
+  background-color: rgb(247, 187, 24);
+  font-size: 20px;
+  padding: 2px;
+  border-radius: 8px;
+  color: rgb(255, 253, 253);
+}
+
+li:hover {
+  background-color: rgb(187, 140, 9);
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+
+.nav-link.active {
+  color: rgb(0, 0, 0); 
+  font-weight: bold;
+}

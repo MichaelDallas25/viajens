@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reviews from '../dados' 
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import './reviews.css'
 
 
 

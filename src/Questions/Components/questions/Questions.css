@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(166, 254, 254);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  width: 800px;
+  height: 560px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 240px;
+  margin-top: 55px;
+  color: rgb(73, 72, 70);
+ 
+}
+
+.container2 {
+  border: 1px solid rgb(157, 161, 161);
+  width: 700px;
+padding: 5px;
+margin-top: 6px;
+margin-left: 40px; 
+   border-radius: 10px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.btn {
+  position: absolute;
+  margin-left: 650px;
+  margin-top: 15px;
+  background-color: rgb(21, 78, 78);
+  border-radius: 35%;
+  color: rgb(255, 255, 255);
+  border: 0px;
+}
+
+.btn:hover {
+  position: absolute;
+  margin-left: 650px;
+  margin-top: 14px;
+  background-color: rgb(13, 176, 176);
+  border-radius: 35%;
+  color: rgb(255, 255, 255);
+  border: 0px;
+}
