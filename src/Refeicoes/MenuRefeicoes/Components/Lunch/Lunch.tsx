@@ -1,13 +1,30 @@
-import menuData from "../../../dados";
 import SingleMenu from "../SingleMenu/SingleMenu";
+export interface MenuItemProps {
+  id: number;
+  title: string;
+  category: string;
+  price: number;
+  desc: string;
+  img: string;
+}
 
-function Lunch() {
+export interface LunchProps {
+  menuData: MenuItemProps[];
+}
+
+function Lunch({ menuData}: LunchProps) {
+  const filterItems = menuData.filter(
+    (item) => item.category.toLowerCase() === "lunch"
+  );
+
   return (
-    <>
-      {[1, 4, 7].map((index) => (
-        <SingleMenu key={menuData[index].id} {...menuData[index]} />
-      ))}
-    </>
+    <section>
+      <div className="menu-container">
+        {filterItems.map((item) => (
+          <SingleMenu key={item.id} {...item} />
+        ))}
+      </div>
+    </section>
   );
 }
 

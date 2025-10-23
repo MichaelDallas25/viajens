@@ -1,4 +1,4 @@
-h1 {
+ /*h1 {
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 10px;
@@ -12,6 +12,7 @@ nav ul {
   padding: 0;
   margin: 0;
   gap: 10px;
+  cursor: pointer;
 }
 
 nav li {
@@ -34,7 +35,3 @@ li:hover {
 }
 
 
-.nav-link.active {
-  color: rgb(0, 0, 0); 
-  font-weight: bold;
-}

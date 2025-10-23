@@ -1,13 +1,30 @@
-import menuData from "../../../dados";
 import SingleMenu from "../SingleMenu/SingleMenu";
+export interface MenuItemProps {
+  id: number;
+  title: string;
+  category: string;
+  price: number;
+  desc: string;
+  img: string;
+}
 
-function BreakFast() {
+export interface BreakFastProps {
+  menuData: MenuItemProps[];
+}
+
+function BreakFast({ menuData }: BreakFastProps) {
+  const filterItems = menuData.filter(
+    (item) => item.category.toLowerCase() === "breakfast"
+  );
+
   return (
-    <>
-      {[0, 3, 6].map((index) => (
-        <SingleMenu key={menuData[index].id} {...menuData[index]} />
-      ))}
-    </>
+    <section>
+      <div className="menu-container">
+        {filterItems.map((item) => (
+          <SingleMenu key={item.id} {...item} />
+        ))}
+      </div>
+    </section>
   );
 }
 

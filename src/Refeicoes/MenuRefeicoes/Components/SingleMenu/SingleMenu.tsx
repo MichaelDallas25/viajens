@@ -7,21 +7,19 @@ interface AllRefeicoesProps {
   img: string;
 }
 
+import "./single.css";
+
 function SingleMenu(item: AllRefeicoesProps) {
-  const {title, category, price, desc, img } = item;
+  const { title, price, desc, img } = item;
   return (
-    <div>
-      <section>
-        <article>
-          <div className="container">
-            <img src={img} alt="menu" />
-            <h2 className="title">{title}</h2>
-            <p>{category}</p>
-            <p>{price}</p>
-            <p>{desc}</p>
-          </div>
-        </article>
-      </section>
+    <div className="menu-item">
+      <div className="image-container">
+        <img className="img" src={img} alt="menu" />
+      </div>
+      <h2 className="title">{title}</h2>
+
+      <p className="price">{price}</p>
+      <p className="desc">{desc}</p>
     </div>
   );
 }
