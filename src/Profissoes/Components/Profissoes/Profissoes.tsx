@@ -10,7 +10,7 @@ const URL = "https://www.course-api.com/react-tabs-project";
 const Profissoes = () => {
   const [loading, setLoading] = useState(true);
   const [profissoes, setProfissoes] = useState([]);
-  const [itemAtual, setIntemAtual]= useState(0)
+  const [itemAtual, setIntemAtual] = useState(0);
 
   useEffect(() => {
     const fetchProfissoes = async () => {
@@ -32,12 +32,13 @@ const Profissoes = () => {
 
   return (
     <>
-      <CompanyTab companies={companiesTransformed}
-      itemAtual={itemAtual} 
-      setItemAtual={setIntemAtual}/>
+      <CompanyTab
+        companies={companiesTransformed}
+        itemAtual={itemAtual}
+        setItemAtual={setIntemAtual}
+      />
       <ul>
-      <Profissao {...profissoes}
-          itemAtual={itemAtual} />;
+        <Profissao profissoes={profissoes} itemAtual={itemAtual} />
       </ul>
     </>
   );
